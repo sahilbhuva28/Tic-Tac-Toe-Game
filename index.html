@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+    <!-- background -->
+    <div class="background">
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+        <span class="ball"></span>
+    </div>
+
+    
+
+    <!-- popup -->
+     <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>Enter Player Names</h2>
+            <label>Player O Name:</label>
+            <input type="text" id="inputO" placeholder="Enter name for O">
+            <label>Player X Name:</label>
+            <input type="text" id="inputX" placeholder="Enter name for X">
+            <button class="popup-btn" id="playBtn">Play Game</button>
+        </div>
+    </div>
+
+    <!-- parent -->
+    <div class="parent">
+        
+        <!-- heading -->
+        <div class="heading">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        
+        <!-- player turn message -->
+        <div class="turn">
+            <p>Click To Start Game</p>
+        </div>
+        
+        <!-- main -->
+        <div class="main">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+
+            <div class="strike-row" id="strikeRow"></div>
+            <div class="strike-col" id="strikeCol"></div>
+            <div class="strike-diag" id="strikeDiag"></div>
+        </div>
+        
+        <!-- player win message -->
+        <div class="message">
+            <p></p>
+        </div>
+        
+        <!-- start/reset button -->
+        <div class="btn">
+            <button class="start-btn">Start</button>
+            <button class="start-btn" id="resetScoreBtn">Reset Scores</button>
+        </div>
+        
+    </div>
+    
+    <!-- player container -->
+    <div class="players-container">
+        <h2>Players</h2>
+        <div class="player-card" id="cardO">
+            <span>O</span>
+            <p id="nameO">Player O</p>
+            <p class="score">Wins: <span id="scoreO">0</span></p>
+        </div>
+        <div class="player-card" id="cardX">
+            <span>X</span>
+            <p id="nameX">Player X</p>
+            <p class="score">Wins: <span id="scoreX">0</span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
